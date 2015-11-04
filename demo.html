@@ -1,0 +1,23 @@
+<html>
+<head>
+	<style>
+		.ccFormatMonitor.cc_type_vs + p::after { content: "Visa"; }
+		.ccFormatMonitor.cc_type_jc + p::after { content: "JCB"; }
+		.ccFormatMonitor.cc_type_dc + p::after { content: "Diners Club"; }
+		.ccFormatMonitor.cc_type_mc + p::after { content: "Mastercard"; }
+		.ccFormatMonitor.cc_type_ax + p::after { content: "American Express"; }
+		.ccFormatMonitor.cc_type_unknown + p::after { content: "Unknown"; }
+	</style>
+</head>
+<body>
+	<label for="cc">Credit Card Number: </label>
+	<input type="text" class="ccFormatMonitor" name="cc" placeholder="Enter Credit Card Number"/>
+	<p>Card type is: </p>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	<!-- Uncomment and comment script below for local debugging -->
+	<!-- <script src="ccFormat.js"></script> -->
+	<script src="https://rawgit.com/lopezton/jquery-creditcard-formatter/master/ccFormat.js"></script>
+</body>
+</html>
