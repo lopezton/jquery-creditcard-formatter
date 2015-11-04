@@ -23,20 +23,9 @@
 					}
 				]
 			}, {
-				name: 'Diners Club Carte Blanch',
-				code: 'dccb',
-				pattern: /^30[0-5]/,
-				valid_length: [14],
-				formats : [
-					{
-						length: 14,
-						format: 'xxxx xxxx xxxx xx'
-					}
-				]
-			}, {
-				name: 'Diners Club International',
-				code: 'dci',
-				pattern: /^36/,
+				name: 'Diners Club',
+				code: 'dc',
+				pattern: /^3[68]/,
 				valid_length: [14],
 				formats : [
 					{
@@ -47,7 +36,7 @@
 			}, {
 				name: 'JCB',
 				code: 'jc',
-				pattern: /^35(2[89]|[3-8][0-9])/,
+				pattern: /^35/,
 				valid_length: [16],
 				formats : [
 					{
